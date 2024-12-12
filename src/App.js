@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { SiKaggle } from 'react-icons/si';
 import About from './components/About';
@@ -6,7 +6,15 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('about');
+  // Initialize state from localStorage, defaulting to 'about' if nothing is stored
+  const [activeSection, setActiveSection] = useState(() => {
+    return localStorage.getItem('activeSection') || 'about';
+  });
+
+  // Update localStorage whenever activeSection changes
+  useEffect(() => {
+    localStorage.setItem('activeSection', activeSection);
+  }, [activeSection]);
 
   return (
     <div className="min-h-screen bg-gray-100 font-sans flex flex-col">
