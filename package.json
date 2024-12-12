@@ -1,10 +1,11 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "homepage": "https://idrissa-gif.github.io/Portfolio/",
-  "private": false,
+  "homepage": "https://idrissa-gif.github.io/PortFolio/",
+  "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
+    "express": "^4.21.2",
     "lucide-react": "^0.468.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -45,5 +46,10 @@
     "gh-pages": "^6.2.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
