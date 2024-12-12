@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "homepage": "https://idrissa-gif.github.io/Portfolio/",
-  "private": true,
+  "private": false,
   "dependencies": {
     "cra-template": "1.2.0",
     "lucide-react": "^0.468.0",
